@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body h1, body h2, body p {
+    margin: 0;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CDDDD6;
+    padding: 23px 50px;
+    
+}
+
+header nav ul {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+header nav a {
+    color: #0A0D12;
+}
+
+main p {
+    font-size: 23px;
+    color: #272727;
+}
+
+main a {
+    background-color: #099250;
+    color: white;
+    font-size: 23px;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-weight: 500;
+}
+
+main .join {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 50%;
+    padding: 0 50px;
+    margin: 80px 0;
+}
+
+main .join h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #099250;
+}
+
+main .handstanding img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+main .registration {
+    display: flex;
+    gap: 60px;
+    padding: 0 50px;
+    margin: 80px 0 100px 0;
+}
+
+main .registration img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+main .registration .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+main .registration .content h2 {
+    font-size: 42px;
+    color: #099250;
+} 
+
+main .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 50px;
+    background-color: #CDDDD6;
+}
+
+main .newsletter p {
+    margin: 24px 0 16px 0;
+}
+
+main .newsletter form {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+main .newsletter label {
+    font-family: "Lato", sans-serif;
+    color: #21272A;
+}
+main .newsletter input {
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+
+main .newsletter .firstname {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .newsletter .email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .newsletter button {
+    background-color: #099250;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding: 12px 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    main p {
+        text-align: justify;
+    }
+    main .join {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    main .join p, main .join h1 {
+        padding: 0 50px;
+    }
+
+    main .registration {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .registration .content {
+        align-items: center;
+    }
+
+    main .newsletter form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main .newsletter {
+        align-items: center;
+    }
+
+    main .newsletter form {
+        align-items: center;
+    }
+}
